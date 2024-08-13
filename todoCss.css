@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.h1 h1 {
+    position: fixed;
+    width: 100%;
+    color: #333;
+    text-align: center;
+    box-shadow: 10px 20px 30px #1489;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #1489;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #fff;
+    padding: 20px 28px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#delete-all-btn {
+    background-color: #1489;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #fff;
+    padding: 20px 28px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    background-color: aliceblue;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.grid-container {
+    margin: 20px;
+    background-color: #1489;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    box-shadow: 0px 23px 30px #1489;
+}
+
+
+/* Add responsive design */
+
+@media (max-width: 900px) {
+    body {
+        font-size: 14px;
+    }
+    #task-input {
+        width: 100%;
+        padding: 10px;
+    }
+    button {
+        padding: 10px 20px;
+    }
+    ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    li {
+        width: 100%;
+    }
+    .box {
+        position: fixed;
+    }
+}
+
+@media (min-width: 400px) {
+    #task-input {
+        margin-left: 0px;
+        text-align: center;
+        padding: 20PX;
+        width: 200px;
+    }
+    #add-task-btn,
+    #delete-all-btn {
+        margin-top: 15px;
+        padding: 15px;
+        height: fit-content;
+        width: max-content;
+    }
+    .grid-container {
+        padding-top: 0px;
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-top: 8px;
+        width: 300px;
+        max-height: 60px;
+    }
+    .containor>.box {
+        padding-right: 60px;
+        position: absolute;
+    }
+}
+
+
+/* Add color animations */
+
+input:focus {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: purple;
+    transition: 0.3s;
+}
+
+li:hover {
+    background-color: whitesmoke;
+    transition: 0.3s;
+}
+
+
+/* Add some basic styling */
+
+#task-list {
+    width: fit-content;
+    font-weight: 700;
+    list-style: none;
+    padding: 0PX;
+    margin: 0;
+}
+
+#task-list li {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+
+/* Add some extra styles */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    position: fixed;
+    top: 170px;
+    left: 70px;
+    width: 350px;
+    margin: 10px 20px;
+    padding-right: 10px;
+    padding: 30px;
+}
+
+.box {
+    position: absolute;
+    overflow: auto;
+    text-align: center;
+    background-color: #1489;
+    max-width: 350PX;
+    margin-top: 340PX;
+    margin-left: 550PX;
+    box-shadow: 0px 25px 30px #1489;
+    padding: 40px;
+    padding-bottom: 20PX;
+}
+
+h1 {
+    margin-bottom: 50px;
+    height: 60px;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #1489;
+    color: black;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 0px;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
